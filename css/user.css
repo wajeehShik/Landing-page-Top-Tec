@@ -1,0 +1,82 @@
+
+    .timeline-wrap {
+      position: relative;
+      height: 420px;
+    }
+
+    .timeline-wrap svg.curve-svg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      overflow: visible;
+    }
+
+    /* Steps */
+    .step {
+      position: absolute;
+      max-width: 200px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .step.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Step positions (mirrored for RTL feel) */
+    .step-1 { top: 55%; right: 0; text-align: right; }
+    .step-2 { top: 30%; right: 38%; text-align: right; }
+    .step-3 { top: 5%;  right: 70%; text-align: right; }
+
+    .step-number {
+      font-size: 5rem;
+      font-weight: 900;
+      color: #e8e8e8;
+      line-height: 1;
+      margin-bottom: -10px;
+    }
+
+    .step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--gray);
+      line-height: 1.7;
+    }
+
+    /* Animated dot on path */
+    @keyframes travel {
+      0%   { offset-distance: 0%; }
+      100% { offset-distance: 100%; }
+    }
+
+    .moving-dot {
+      width: 10px; height: 10px;
+      background: var(--yellow);
+      border-radius: 50%;
+      position: absolute;
+      top: 0; left: 0;
+      offset-path: path('M 480,350 C 380,280 280,200 200,130 C 150,90 90,60 30,30');
+      offset-rotate: 0deg;
+      animation: travel 3s ease-in-out infinite alternate;
+    }
+
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    @media (max-width: 768px) {
+      .about-us {
+        grid-template-columns: 1fr;
+        padding: 60px 24px 80px;
+      }
+    }
+
+    

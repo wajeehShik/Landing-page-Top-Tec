@@ -1,0 +1,465 @@
+
+/****************/
+/* هذا الكود يمنع خط 'Cairo' من التأثير على الأيقونات */
+.fa, .fas, .fab, .far, .fa-solid, .fa-brands {
+    font-family: "Font Awesome 6 Free" !important;
+    /* إذا كنت تستخدم إصداراً قديماً جرب: */
+    /* font-family: "FontAwesome" !important; */
+    font-weight: 900; /* ضروري جداً للأيقونات الممتلئة */
+}
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #C4C5D5;
+}
+header .logo{
+    width: 85px;
+    height: 86px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+header  ul{
+    display: flex;
+    margin-top: 41px;
+    gap:50px;
+}
+header  ul li  a{
+font-weight: 500;
+font-size: 16px;
+color: #000000;
+    transition: all 0.3s ease;
+}
+header  ul li  a:hover,
+header  ul li  a.active{
+    color: #0D47A1;
+}
+header .request-sercive{
+    display: block;
+    width: 157px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 27px 10px 26px;
+}
+/*************hero***********/
+.hero{
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+.hero .hero-content{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.hero .hero-content h1{
+    
+    width: 339px;
+}
+.hero .hero-content span
+
+{
+        font-size: 40px;
+    font-weight: bold;
+    color: #FCC103;
+}
+.hero .hero-content p{
+    width: 450px;
+}
+.hero .hero-content  .btns{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.hero .hero-content  .btns .ask{
+    background: #01359A;
+    display: block;
+    color: white;
+    width: 147px;
+    height: 45px;
+    padding-top: 8px;
+    padding-right: 19px;
+    border-radius: 12px;
+}
+.hero .hero-content  .btns .discocer{
+    background: #ffff;
+    display: block;
+    color: #002071;
+    width: 147px;
+    height: 45px;
+    padding-top: 8px;
+    padding-right: 19px;
+    border-radius: 12px;
+}
+.hero .hero-img{
+          width: 540px;
+}
+/*****************/
+.statics{
+    display: flex;
+    justify-content: space-around;
+    background: #01359A;
+    width: 85%;
+    margin: auto;
+    border-radius: 24px;
+    padding: 37px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, #1e40af 0%, #1e3a8a 100%);
+    box-shadow: 0 20px 40px -10px rgba(30, 58, 138, 0.3);
+}
+.statics .clinints{
+     display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+.statics .clinints .number{
+        font-size: 30px;
+    font-weight: bold;
+}
+/*****/
+.why-us{
+    background: #F5F8FF;
+    padding: 100px 20px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background-color: #f8faff; /* لون الخلفية الفاتح جداً */
+    overflow: hidden;/* هذا السطر يصنع الانحناء في الأعلى والأسفل */
+border-top-left-radius: 50% 60px;
+border-top-right-radius: 50% 60px;
+border-bottom-left-radius: 50% 60px;
+border-bottom-right-radius: 50% 60px;
+}
+.why-us>span{
+        font-size: 33px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 19px;
+}
+.why-us>p{
+    color: #000000;
+    font-size: 19px;
+    width: 800px;
+    display: block;
+    margin: auto;}
+   
+.why-us .content{
+margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+.why-us .content div{
+        display: flex;
+    background: #fff;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: justify;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    padding-left: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    will-change: transform; /* تلميح للمتصفح لتجهيز تسريع الجهاز (GPU acceleration) */
+}
+.why-us .content div.active,
+.why-us .content div:hover{
+    background: linear-gradient(180deg, #E9EFFF 0%, #FFFFFF 100%);
+}
+
+.why-us .content div:hover{
+
+transform: translateY(-8px); /* ترفع البطاقة للأعلى قليلاً (قيمة سالبة) */
+    box-shadow: 0 10px 25px rgba(0, 71, 177, 0.08); /* ظل أعمق وبلون الأزرق الخفيف */
+    border-color: #0047b1; /* تغيير لون الـ border ليتناسب مع هوية TOP TECH */
+    }
+.why-us   .content div i{
+    color: #0D47A1;
+}
+.why-us   .content div span{
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.why-us  .content div  p{
+width: 300px;
+}
+/*****************/
+.services{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.services >span.title{
+        font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 38px;
+}
+.services .cotnent{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 21px;
+}
+.services .cotnent  .service{
+      background: white;
+    border-radius: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 47px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.services   .cotnent  .service .title
+{
+        color: #002071;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.contact-us{
+    margin-top: 66px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-us .title{
+        font-size: 50px;
+    font-weight: bold;
+}
+.contact-us p{
+    margin-bottom: 50px;
+}
+.contact-us
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-us .contact-form
+
+{
+    
+    width: 34%;
+}
+.contact-us
+.content .contact-img img{
+    
+    width: 594px;
+    height: 268px;
+}
+
+.ask-services{
+background-color: #013698; /* اللون الأزرق الأساسي */
+    height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* لقص الزوائد خارج الإطار */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    direction: rtl; /* لضبط اتجاه النص العربي */
+}
+.ask-services .title{
+    
+    font-size: 31px;
+    font-weight: bold;
+}
+.ask-services button{
+    
+    background: white;
+    width: 200px;
+    height: 41px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #01359A;
+    font-weight: bold;
+}
+
+
+
+
+.bg-shape {
+    position: absolute;
+    border: 1.5px solid rgba(255, 255, 255, 0.4); /* خط أبيض شفاف */
+    border-radius: 50%;
+    pointer-events: none; /* لكي لا تعيق النقر على الزر */
+}
+
+/* --- الجهة اليسرى --- */
+.left-1 {
+    width: 280px;
+    height: 280px;
+    bottom: -140px;
+    left: -80px;
+}
+
+.left-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: -120px;
+        border: 6px solid;
+    border-color: #FFD700; /* الخط الأصفر/الذهبي */
+}
+
+/* --- الجهة اليمنى --- */
+.right-1 {
+    width: 320px;
+    height: 320px;
+    top: -160px;
+    right: -100px;
+}
+
+.right-2 {
+    width: 450px;
+    height: 450px;
+    top: -225px;
+    right: -150px;
+        border: 6px solid;
+    border-color: #FFD700; /* الخط الأصفر/الذهبي */
+}
+
+/* محتوى النص */
+.content { z-index: 2; }
+.content h1 { font-size: 2.2rem; margin-bottom: 15px; font-weight: bold; }
+.content p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; }
+
+.cta-button {
+    background: white;
+    color: #013698;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+footer{
+    
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+footer .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+footer .content .info span
+{
+        font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+footer .content .info p
+
+{
+        width: 296px;
+    margin-top: 21px;
+    margin-bottom: 39px;
+}
+footer .content .info .social{
+        display: flex;
+    gap: 30px;
+}
+footer .content .info .social a
+
+{
+    background: #E2E2E2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 50%;
+}
+footer .content .links span
+{
+        font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+footer .content .links  ul{
+   margin-top: 21px;
+       display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer .content .contacts>span
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+
+footer .contacts .contacts> .con
+
+{
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer .contacts .contatct{
+        margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer  .copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F1F5F9;
+}
+/* */
+/* .services */
+/* .services */
+/* .services */
+/* .services */
+/* .services */
+/* .services */
+/* .services */
+/* .why-us */
+/* .why-us */ 

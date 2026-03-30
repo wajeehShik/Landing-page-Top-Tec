@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+    direction: rtl; 
+    font-family: 'Cairo', sans-serif;
+    direction: rtl; 
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4F7FF 100%);
+    box-sizing: border-box;
+}
+ul {
+    list-style: none; 
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: var(--transition);
+}

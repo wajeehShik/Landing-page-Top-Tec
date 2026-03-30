@@ -1,0 +1,217 @@
+/* الحاوية الرئيسية */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/* تنسيق الـ Input */
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* لون الـ Border الافتراضي */
+    border-radius: 8px;
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+    font-size: 16px;
+    text-align: right; /* للغة العربية */
+        width: 318px;
+}
+
+/* تنسيق الـ Label */
+.input-group label {
+    position: absolute;
+    right: 15px; /* البداية من اليمين */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff; /* خلفية بيضاء لتغطية الـ Border */
+    padding: 0 5px;
+    color: #999;
+    pointer-events: none; /* لكي لا يمنع الضغط على الـ input */
+    transition: 0.3s ease;
+}
+
+/* الحالة عند الضغط (Focus) أو عندما لا يكون الحقل فارغاً */
+.input-group input:focus,
+.input-group input:not(:placeholder-shown) {
+    border-color: #0D47A1; /* لون الـ Border عند التفاعل */
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 0; /* يرتفع للأعلى ليقطع الـ Border */
+    font-size: 12px;
+    color: #0D47A1;
+    font-weight: bold;
+}
+/* الحاوية الأساسية */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+/* تنسيق الـ Textarea */
+.input-group textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 15px 10px; /* زيادة الحشو العلوي لترك مساحة للـ Label */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fcfcfc;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* تنسيق الـ Label الافتراضي (جوا الـ textarea) */
+.input-group label {
+    position: absolute;
+    top: 18px; /* مكانه وهو جوا */
+    right: 15px;
+    color: #999;
+    font-size: 15px;
+    pointer-events: none; /* عشان تضغط من خلاله */
+    transition: all 0.3s ease; /* سرعة الحركة */
+    background: transparent;
+}
+
+/* الحالة المهمة: 
+   عند التركيز (focus) 
+   أو إذا كان الحقل "ليس فارغاً" (:not(:placeholder-shown))
+*/
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -12px;           /* يطلعه فوق الحدود */
+    right: 12px;          /* يزيحه لليمين قليلاً */
+    font-size: 12px;      /* يصغر الخط */
+    color: #003399;       /* يغير اللون للأزرق */
+    background: #fff;     /* يعطيه خلفية بيضاء عشان يغطي الخط اللي تحته */
+    padding: 0 8px;       /* مسافة حول النص فوق الخط */
+    font-weight: bold;
+}
+
+/* تغيير لون الحدود عند الضغط */
+.input-group textarea:focus {
+    border-color: #003399;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+/* الحاوية الأساسية */
+.input-group {
+    position: relative;
+    margin-bottom: 25px; /* توحيد المسافات مع الـ input */
+    direction: rtl;
+    width: 100%;
+}
+
+/* تنسيق الـ Textarea */
+.input-group textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 15px; /* حشو متساوي */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent; /* جعلها شفافة لتبدو مثل الـ input */
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: block;
+    resize: vertical; /* السماح للمستخدم بتغيير الحجم عمودياً فقط */
+}
+
+/* تنسيق الـ Label الافتراضي */
+.input-group label {
+    position: absolute;
+    top: 15px; /* محاذاة مع أول سطر */
+    right: 15px;
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: transparent;
+    padding: 0 5px;
+}
+
+/* الحالة عند التفاعل أو وجود نص */
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;           /* يرتفع ليجلس فوق الـ border */
+    right: 12px;
+    font-size: 12px;
+    color: #003399;
+    background: #fff;     /* خلفية بيضاء لقطع الخط */
+    font-weight: bold;
+    z-index: 10;          /* التأكد من ظهوره فوق الحدود */
+}
+
+/* تغيير لون الحدود عند الضغط */
+.input-group textarea:focus {
+    border-color: #003399;
+    border-width: 1.5px; /* زيادة الطابع البصري للـ focus */
+}
+
+/* الحاوية */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+/* تنسيق الـ Input والـ Textarea معاً */
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    background: transparent; /* عشان يظهر التدرج اللوني اللي وراه */
+    transition: 0.3s;
+    font-size: 16px;
+    text-align: right;
+    display: block;
+    box-sizing: border-box; /* عشان الـ padding ما يخرب العرض */
+}
+
+.input-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* تنسيق الـ Label */
+.input-group label {
+    position: absolute;
+    right: 15px;
+    top: 15px; /* مكانه الافتراضي */
+    color: #999;
+    padding: 0 5px; /* مسافة صغيرة عشان يبعد عن الخط من الجوانب */
+    pointer-events: none;
+    transition: 0.2s ease-out;
+    
+    /* السر هنا: خلفية بيضاء لقص الخط */
+    /* ملاحظة: لو خلفية الكرت تدرج لوني، يفضل تخلي اللون قريب جداً من لون المنطقة اللي هو فيها */
+    background-color: white; 
+}
+
+/* الحالة عند الـ Focus أو لما يكون فيه نص */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -10px; /* يرتفع لنص الخط تماماً */
+    right: 12px;
+    font-size: 13px;
+    color: #0D47A1;
+    font-weight: bold;
+}
+
+/* تغيير لون الحدود عند التفاعل */
+.input-group input:focus,
+.input-group textarea:focus {
+    border: 2px solid #0D47A1;
+}

@@ -1,0 +1,75 @@
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-img img, .contact-img img {
+    animation: floating 4s ease-in-out infinite;
+    display: block; /* لضمان عدم حدوث مشاكل في المسافات */
+}
+/* تحديث لكود الـ why-us والـ service */
+.why-us .content div, .services .cotnent .service {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.why-us .content div:hover, .services .cotnent .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(13, 71, 161, 0.1);
+    border-color: #FCC103; /* لون الهوية الأصفر */
+}
+
+/* تحريك الأيقونة داخل البطاقة عند الهوفر */
+.why-us .content div:hover i, .services .cotnent .service:hover i {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}.hero .hero-content .btns .ask {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .hero-content .btns .ask::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: none;
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% { left: -60%; }
+    20% { left: 120%; }
+    100% { left: 120%; }
+}
+
+
+/*****/
+/* الحالة الابتدائية: مخفي ونازل قليلاً */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+/* الحالة عند الوصول إليه: يظهر ويرتفع لمكانه */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

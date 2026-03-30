@@ -53,6 +53,10 @@
     .hero .hero-content p {
     width: 306px;
 }
+
+.hero .hero-content{
+    text-align: center;
+}
 .statics{
     
     flex-direction: column;
@@ -75,6 +79,8 @@
     }
     .contact-us .contact-form {
     width: 80%;
+    
+        margin: auto;
 }
 
 .left-1 {

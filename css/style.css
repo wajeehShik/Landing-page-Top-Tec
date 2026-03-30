@@ -157,21 +157,20 @@ margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+      margin-right: 40px;
 
 }
 .why-us .content div{
         display: flex;
     background: #fff;
     flex-direction: column;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-top: 50px;
     text-align: justify;
     padding-right: 20px;
     padding-bottom: 50px;
     border-radius: 20px;
-    padding-left: 100px;
+    padding-left: 53px;
     border: 1px solid rgba(0, 0, 0, 0.05); 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -190,6 +189,11 @@ transform: translateY(-8px); /* ترفع البطاقة للأعلى قليلا�
     }
 .why-us   .content div i{
     color: #0D47A1;
+        width: 20px;
+    display: block;
+    height: 20px;
+    margin-bottom: 25px;
+    font-size: 35px;
 }
 .why-us   .content div span{
     font-weight: bold;
@@ -220,6 +224,8 @@ width: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
     gap: 21px;
+    
+    padding-right: 83px;
 }
 .services .cotnent  .service{
       background: white;
@@ -232,6 +238,20 @@ width: 300px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+.services .cotnent  .service i{
+        display: block;
+    width: 60px;
+    text-align: center;
+    margin: auto;
+    height: 60px;
+    border-radius: 16px;
+    padding-top: 17px;
+    color: #01359A;
+    background: #0633A00D;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 .services   .cotnent  .service .title
 {
@@ -452,6 +472,22 @@ footer  .copyright{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #F1F5F9;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; /* أو 1140px حسب عرض التصميم عندك */
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* لإضافة لمسة احترافية تناسب التصميم */
+    box-sizing: border-box; 
+}
+
+/* لجعل الحاويات داخل الشبكة (Grid) متناسقة */
+.section-wrapper {
+    padding: 80px 0; /* مسافة رأسية كبيرة بين الأقسام كما في التصميم */
 }
 /* */
 /* .services */

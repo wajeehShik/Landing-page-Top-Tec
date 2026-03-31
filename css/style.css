@@ -1,52 +1,7 @@
 
 /****************/
 /* هذا الكود يمنع خط 'Cairo' من التأثير على الأيقونات */
-.fa, .fas, .fab, .far, .fa-solid, .fa-brands {
-    font-family: "Font Awesome 6 Free" !important;
-    /* إذا كنت تستخدم إصداراً قديماً جرب: */
-    /* font-family: "FontAwesome" !important; */
-    font-weight: 900; /* ضروري جداً للأيقونات الممتلئة */
-}
-header{
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #C4C5D5;
-}
-header .logo{
-    width: 85px;
-    height: 86px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-header  ul{
-    display: flex;
-    margin-top: 41px;
-    gap:50px;
-}
-header  ul li  a{
-font-weight: 500;
-font-size: 16px;
-color: #000000;
-    transition: all 0.3s ease;
-}
-header  ul li  a:hover,
-header  ul li  a.active{
-    color: #0D47A1;
-}
-header .request-sercive{
-    display: block;
-    width: 157px;
-    height: 50px;
-    margin-top: 25px;
-    background-color: #0D47A1;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 13px 27px 10px 26px;
-}
+
 /*************hero***********/
 .hero{
     padding-top: 54px;
@@ -83,21 +38,33 @@ header .request-sercive{
     background: #01359A;
     display: block;
     color: white;
-    width: 147px;
+      width: 167px;
     height: 45px;
     padding-top: 8px;
     padding-right: 19px;
     border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+.hero .hero-content  .btns .ask i{
+    padding-top: 5px;
+    display: block;
 }
 .hero .hero-content  .btns .discocer{
     background: #ffff;
-    display: block;
+    display: flex;
     color: #002071;
-    width: 147px;
+    width: 191px;
     height: 45px;
     padding-top: 8px;
     padding-right: 19px;
     border-radius: 12px;
+    border: 2px solid rgba(196, 197, 213, 1);
+    justify-content: space-around;
+}
+.hero .hero-content  .btns .discocer i{
+    display: block;
+    padding-top: 6px;
 }
 .hero .hero-img{
           width: 540px;
@@ -161,6 +128,8 @@ margin-top: 50px;
 
 }
 .why-us .content div{
+    flex: 1 1 350px; /* ينمو ويصغر، لكن حجمه الأساسي 300px */
+    max-width: 450px; /* نحدد أقصى عرض للكرت الواحد حتى لا يتمدد بشكل مبالغ فيه */
         display: flex;
     background: #fff;
     flex-direction: column;
@@ -400,87 +369,6 @@ background-color: #013698; /* اللون الأزرق الأساسي */
 
 
 
-
-footer{
-    
-    background: white;
-    display: flex;
-    flex-direction: column;
-}
-footer .content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 50px;
-}
-
-footer .content .info span
-{
-        font-size: 30px;
-    font-weight: bold;
-    color: #0633A0;
-}
-footer .content .info p
-
-{
-        width: 296px;
-    margin-top: 21px;
-    margin-bottom: 39px;
-}
-footer .content .info .social{
-        display: flex;
-    gap: 30px;
-}
-footer .content .info .social a
-
-{
-    background: #E2E2E2;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding-top: 12px;
-    border-radius: 50%;
-}
-footer .content .links span
-{
-        font-size: 30px;
-    font-weight: bold;
-    color: #0633A0;
-}
-footer .content .links  ul{
-   margin-top: 21px;
-       display: flex;
-    flex-direction: column;
-    gap: 11px;
-}
-footer .content .contacts>span
-{
-    font-size: 30px;
-    font-weight: bold;
-    color: #0633A0;
-}
-
-footer .contacts .contacts> .con
-
-{
-    margin-top: 21px;
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-}
-footer .contacts .contatct{
-        margin-top: 21px;
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-}
-footer  .copyright{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F1F5F9;
-}
 
 .container {
     width: 100%;

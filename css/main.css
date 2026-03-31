@@ -43,3 +43,133 @@ button {
     background: none;
     transition: var(--transition);
 }
+.fa, .fas, .fab, .far, .fa-solid, .fa-brands {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900; /* ضروري جداً للأيقونات الممتلئة */
+}
+header{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #C4C5D5;
+}
+header .logo{
+    width: 85px;
+    height: 86px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+header  ul{
+    display: flex;
+    margin-top: 41px;
+    gap:50px;
+}
+header  ul li  a{
+font-weight: 500;
+font-size: 16px;
+color: #000000;
+    transition: all 0.3s ease;
+}
+header  ul li  a:hover,
+header  ul li  a.active{
+    color: #0D47A1;
+}
+header .request-sercive{
+    display: block;
+    width: 157px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 27px 10px 26px;
+}
+
+
+
+footer{
+    
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+footer .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+footer .content .info span
+{
+        font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+footer .content .info p
+
+{
+        width: 296px;
+    margin-top: 21px;
+    margin-bottom: 39px;
+}
+footer .content .info .social{
+        display: flex;
+    gap: 30px;
+}
+footer .content .info .social a
+
+{
+    background: #E2E2E2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 50%;
+}
+footer .content .links span
+{
+        font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+footer .content .links  ul{
+   margin-top: 21px;
+       display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer .content .contacts>span
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0633A0;
+}
+
+footer .contacts .contacts> .con
+
+{
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer .contacts .contatct{
+        margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+footer  .copyright{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F1F5F9;
+    color:
+rgba(100, 116, 139, 1);
+}

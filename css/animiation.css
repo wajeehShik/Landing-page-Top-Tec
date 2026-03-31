@@ -73,3 +73,27 @@
     opacity: 1;
     transform: translateY(0);
 }
+/* القاعدة الأساسية لكل العناصر المتحركة */
+.reveal {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+    will-change: transform, opacity;
+}
+
+/* 1. ظهور من أسفل (مناسب للنصوص والفقرات) */
+.fade-up { transform: translateY(40px); }
+
+/* 2. ظهور من اليمين (مناسب للصور أو العناصر الجانبية) */
+.fade-right { transform: translateX(-50px); }
+
+/* 3. ظهور من اليسار */
+.fade-left { transform: translateX(50px); }
+
+/* 4. تكبير تدريجي (مناسب للأيقونات أو الأرقام) */
+.zoom-in { transform: scale(0.85); }
+
+/* الحالة النشطة التي تعيد كل شيء لأصله */
+.reveal.active {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}

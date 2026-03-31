@@ -1,0 +1,376 @@
+
+.hero{
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+.hero .hero-content{
+    padding-top: 118px;
+    padding-bottom: 20px;
+}
+
+.hero .hero-content h1{
+    width: 339px;
+    margin-bottom: 10px;
+}
+.hero .hero-content p{
+    width: 450px;
+}
+.hero .hero-content  .btn{
+    background: #01359A;
+    display: block;
+    color: white;
+      width: 167px;
+    height: 45px;
+    padding-top: 8px;
+    padding-right: 19px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+        font-size: 18px;
+    padding-top: 12px;
+    margin-top: 20px;
+}
+.hero .hero-image img{
+          width: 640px;
+          height: 430px;
+          
+    margin-top: 20px;
+    border-radius: 30px;
+}
+/****why services***/
+/* 1. الحاوية الكبرى: ترتب العناصر تحت بعضها */
+.why-service{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    background-color: rgba(245, 248, 255, 1);
+}
+.why-service  .why-img  img{
+    border-radius: 24px;
+    height: 330px;
+    width: 600px;
+}
+
+.why-service  .why-content  span.title{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+.why-service  .why-content .content{
+    display: flex;
+    gap: 13px;
+}
+
+.why-service  .why-content .content div
+{
+    
+    margin-top: 10px;
+}
+.why-service  .why-content .content div span
+{
+    margin-bottom: 10px;
+        font-size: 18px;
+    color: rgba(0, 32, 113, 1);
+    display: block;
+    font-weight: bold;
+}
+.why-service  .why-content .content div p
+
+{
+    
+    width: 429px;
+    font-size: 14px;
+    color: #4c4545;
+}
+.why-service  .why-content .content  i
+
+{
+        display: block;
+    background: rgba(255, 224, 143, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 21px;
+    text-align: center;
+    padding-top: 11px;
+    color: rgba(117, 91, 0, 1);
+    margin-top: 12px;
+}
+/***************/
+.services-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    color: #002d5b;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* حاوية الشبكة */
+.services-grid {
+    display: grid;
+    /* توزيع 3 أعمدة متساوية */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px; /* المسافة بين البطاقات */
+}
+
+/* تنسيق البطاقة */
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* ظل خفيف */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* تأثير بسيط عند التمرير */
+}
+
+/* تنسيق مكان الأيقونة */
+.icon-wrapper {
+    background-color: #f0f4ff; /* لون خلفية الأيقونة */
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #3b82f6; /* لون الأيقونة */
+    font-size: 24px;
+}
+
+.service-card h3 {
+    color: #002d5b;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #6c757d;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+/*****/
+/* الحاوية الكبرى */
+.process-section {
+    background-color: #01359a; /* نفس اللون الأزرق في الصورة */
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    direction: rtl;
+}
+
+.process-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* حاوية الـ Flex */
+.process-container {
+    display: flex;
+    justify-content: space-around; /* توزيع المسافات بالتساوي */
+    align-items: flex-start;      /* محاذاة العناصر من الأعلى */
+    flex-wrap: wrap;              /* لضمان التجاوب مع الموبايل */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* العنصر الفردي */
+.step-item {
+    flex: 1;                     /* تأخذ كل بطاقة مساحة متساوية */
+    min-width: 200px;            /* لضمان عدم صغرها على الشاشات المتوسطة */
+    display: flex;
+    flex-direction: column;      /* ترتيب الأيقونة ثم العنوان ثم النص */
+    align-items: center;
+    gap: 15px;
+}
+
+/* تنسيق الدوائر (الأيقونات) */
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background-color: white;     /* اللون الافتراضي أبيض */
+    color: #01359a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+/* تمييز الخطوة النشطة (مثل "التحليل" في الصورة) */
+.step-item.active .step-icon {
+    background-color: #ffcc00;   /* اللون الأصفر المميز */
+    color: #333;
+}
+
+/* النصوص */
+.step-item h3 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.step-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;                /* جعل النص الوصفي أخف قليلاً */
+}
+
+/************/
+:root {
+    --primary-blue: #01359a;
+    --accent-yellow: #ffcc00;
+    --text-gray: #6c757d;
+    --bg-light: #f5f8ff;
+}
+
+.testimonial-section {
+    background-color: var(--bg-light);
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+}
+
+.testimonial-card {
+    position: relative; /* ضروري لتموضع الأيقونة */
+    background: #fff;
+    border: 2px solid #3b82f6; /* لون الإطار الأزرق */
+    border-radius: 25px;
+    padding: 60px 40px 40px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    opacity: 0; /* للـ JavaScript animation */
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* أيقونة الاقتباس العائمة */
+.quote-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%); /* يرفعها نصف حجمها للأعلى */
+    background-color: var(--accent-yellow);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+.stars {
+    color: var(--accent-yellow);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.testimonial-text {
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.author-name {
+    color: var(--primary-blue);
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.author-title {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* كلاس التفعيل للـ JS */
+.testimonial-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* القسم الرئيسي */
+.cta-section {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px; /* العرض المحدد في الفيجما */
+    padding: 20px;
+}
+
+.cta-container {
+    background-color: #01359A; /* اللون الأزرق من التصميم */
+    color: #ffffff;
+    border-radius: 48px; /* الانحناء المطلوب */
+    padding: 64px; /* التباعد الداخلي من التصميم */
+    text-align: center;
+    
+    /* استخدام Flexbox لتوسيط العناصر */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px; /* المسافة بين النصوص والزر */
+}
+
+/* العنوان */
+.cta-title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+/* النص الوصفي */
+.cta-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px; /* لتنسيق النص في سطرين كما في الصورة */
+    opacity: 0.9;
+}
+
+/* الزر */
+.cta-button {
+    background-color: #ffffff;
+    color: #01359A;
+    text-decoration: none;
+    padding: 16px 48px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .cta-container {
+        padding: 40px 20px;
+        border-radius: 24px;
+    }
+    .cta-title {
+        font-size: 28px;
+    }
+    .cta-text {
+        font-size: 16px;
+    }
+}

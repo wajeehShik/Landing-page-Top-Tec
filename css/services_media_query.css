@@ -1,0 +1,17 @@
+/* تنسيقات الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .hero{
+        
+    flex-direction: column;
+    }
+    .why-service {
+    flex-direction: column;
+
+    }
+    .why-content{
+        text-align: center;
+    }
+    .why-service .why-content .content div p {
+    width: 229px;
+}
+}
